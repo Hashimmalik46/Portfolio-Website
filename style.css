@@ -8,12 +8,20 @@
   font-family: "poppins";
   box-sizing: border-box;
 }
+body{
+  background-color: black;
+  color: #fff;
+}
+html{
+  scroll-behavior:smooth;
+}
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(bg.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(Self2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 
 .container {
@@ -21,7 +29,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 120px;
 }
 nav {
   display: flex;
@@ -32,7 +40,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 20px 20px;
 }
 nav ul li a {
   color: white;
@@ -59,7 +67,7 @@ nav ul li a:hover::after {
   justify-content: space-between;
 }
 .header-text {
-  margin-top: 15%;
+  margin-top: 25%;
   font-size: 30px;
   color: #fff;
 }
@@ -71,17 +79,46 @@ nav ul li a:hover::after {
   color: #ff004f;
 }
 
-.self img {
-  max-width: 400px;
-  margin-top: 20%;
-  margin-right: 100px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 8px 0px rgba(255, 0, 79, 0.6);
-}
-.insta {
-  color: #ff004f;
-}
 .insta:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+
+
+/* About page */
+#about{
+  padding: 80px 0;
+  color: #ababab;
+
+}.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col1{
+  flex-basis: 35%;
+}
+.col1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.col2{
+  flex-basis: 60%;
+}
+
+.heading{
+  font-size: 60px;
+  font-weight: 600;
+  color: #FFF;
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
